@@ -1,4 +1,5 @@
-# Quiz-Biz
+# QuizWhiz
+
 
 ## User Story
 
