@@ -33,7 +33,7 @@ From scratch, create a quiz game at which a timer will initiate as soon as the u
 
 ## Link to Website
 
-https://dcollan.github.io/quiz-biz/
+https://frankaroca.github.io/QuizWhiz/
 
 ## How to Run
 
