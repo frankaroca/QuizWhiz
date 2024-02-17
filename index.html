@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Code Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+    <!-- Display the timer -->
+        <div class="row">
+            <div>
+                <p class="time">Time:75s</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+
+
+    <!-- Set what the user will see first before beginning the quiz -->
+            <section id="info">
+                <div class="row">
+                    <div>
+                        <h1>QuizBiz! The best web quiz ever!</h1>
+                        <p>Answer as many questions correctly as you can! 20 second deduction per incorrect answer,
+                        reach the highest score possible and compete with your friends to see who's full-stack genius!
+                        </p>
+                        <div id="runButton">
+                            <button id="begin" type="button">Begin!</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+    <!-- Set the questions for the user to answer once beginning the quiz -->
+            <section id="problems">
+                <div class="row">
+                    <div>
+                        <h2 id="problem"></h2>
+                            <ul class="exclude-bullet-text">
+                                <li><button id="choice1" value="0" type="button"
+                                        class="selected"></button></li>
+                                <br>
+                                <li><button id="choice2" value="1" type="button"
+                                        class="selected"></button></li>
+                                <br>
+                                <li><button id="choice3" value="2" type="button"
+                                        class="selected"></button></li>
+                                <br>
+                                <li><button id="choice4" value="3" type="button"
+                                        class="selected"></button></li>
+                                <br>
+                            </ul>
+                        <!-- Set whether answer is right or wrong -->
+                        <div id="right-wrong"></div>
+                    </div>
+                </div>
+            </section>
+
+
+    <!-- Set so that once the quiz ends, the final score is displayed -->
+                <section id="results">
+                    <div class="row">
+                        <div>
+                            <h2>Quiz Over!</h2>
+                            <p>Your score is displayed: <span id="total">0</span></p>
+                            <p>Please enter your initials: <span><input placeholder="initials" id="savedinitials" /></span>
+                                <button id="enterScore">Submit</button>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+    <!-- Area to checkout highscores -->
+            <div id="checkScores">
+                <button id="seeScores" type="button">See High Scores</button>
+            </div>
+
+                        <!-- High Scores Section -->
+                        <section id="highscores">
+                            <div class="row">
+                                <div>
+                                        <h2>High Scores</h2>
+                                        <!-- Ordered list descends all high scores sequentially -->
+                                        <ol id="savedscores"></ol>
+                                        <button id="return">Return Home</button>
+                                </div>
+                            </div>
+                        </section>
+
+        </div>
+    </main>
+    <script src="./Assets/js/script.js"></script>
+</body>
+
+</html>
